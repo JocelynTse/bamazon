@@ -1,0 +1,23 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "Bamazon Node MySQL app",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JocelynTse/bamazon.git"
+  },
+  "author": "Jocelyn Tse",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JocelynTse/bamazon/issues"
+  },
+  "homepage": "https://github.com/JocelynTse/bamazon#readme",
+  "dependencies": {
+    "inquirer": "^6.0.0",
+    "mysql": "^2.16.0"
+  }
+}
