@@ -50,12 +50,14 @@ function placeOrder() {
                 for (let i = 0; i < res.length; i++) {
                     if (res[i].stock_quantity > order.quantity) {
                         let total = order.quantity * res[i].price;
-                        console.log("Order Invoice" +
-                            "\n----------------" +
+                        console.log(
+                            "\n--------------------" +
+                            "\nOrder Invoice" +
+                            "\n--------------------" +
                             "\nItem Ordered: " + res[i].product_name +
                             "\nQuantity Ordered: " + order.quantity +
                             "\nOrder Total: $" + total +
-                            "\n================");
+                            "\n====================");
                         connection.query(
                             "UPDATE products SET ? WHERE ?",
                             [
@@ -73,8 +75,8 @@ function placeOrder() {
                         console.log("Quantity Available: " + res[i].stock_quantity +
                             "\nUpdate quantity, please try placing order again!");
                     };
-                }
+                };
             }
         )
     })
-}
+};
